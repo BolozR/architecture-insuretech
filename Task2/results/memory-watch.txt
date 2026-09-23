@@ -1,0 +1,478 @@
+
+2026-09-10T01:01:40.212950+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 59%/80%   1         10        1          7m27s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           7m27s
+deployment.apps/prometheus-adapter   1/1     1            1           3m32s
+deployment.apps/scaletestapp         1/1     1            1           7m27s
+
+NAME                                      READY   STATUS    RESTARTS   AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0          7m27s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0          3m32s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   0          55s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           1m           24Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         1m           11Mi            
+
+2026-09-10T01:01:50.294097+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 59%/80%   1         10        1          7m37s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           7m37s
+deployment.apps/prometheus-adapter   1/1     1            1           3m42s
+deployment.apps/scaletestapp         1/1     1            1           7m37s
+
+NAME                                      READY   STATUS    RESTARTS   AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0          7m37s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0          3m42s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   0          65s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           1m           24Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         1m           11Mi            
+
+2026-09-10T01:02:00.392324+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 59%/80%   1         10        1          7m47s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           7m47s
+deployment.apps/prometheus-adapter   1/1     1            1           3m52s
+deployment.apps/scaletestapp         0/1     1            0           7m47s
+
+NAME                                      READY   STATUS    RESTARTS     AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0            7m47s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0            3m52s
+pod/scaletestapp-67cc57fd9c-kwm6h         0/1     Running   1 (6s ago)   75s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           1m           24Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         1m           11Mi            
+
+2026-09-10T01:02:10.493535+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 59%/80%   1         10        1          7m57s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           7m57s
+deployment.apps/prometheus-adapter   1/1     1            1           4m2s
+deployment.apps/scaletestapp         1/1     1            1           7m57s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             7m57s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             4m2s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (16s ago)   85s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           1m           24Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         1m           11Mi            
+
+2026-09-10T01:02:20.601783+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 59%/80%   1         10        1          8m7s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           8m7s
+deployment.apps/prometheus-adapter   1/1     1            1           4m12s
+deployment.apps/scaletestapp         1/1     1            1           8m7s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             8m7s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             4m12s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (26s ago)   95s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           1m           24Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         1m           11Mi            
+
+2026-09-10T01:02:30.717317+03:00
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 120%/80%   1         10        1          8m17s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           8m17s
+deployment.apps/prometheus-adapter   1/1     1            1           4m22s
+deployment.apps/scaletestapp         1/2     2            1           8m17s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             8m17s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             4m22s
+pod/scaletestapp-67cc57fd9c-bqb8l         0/1     Running   0             2s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (36s ago)   105s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           34Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         9m           24Mi            
+
+2026-09-10T01:02:40.830683+03:00
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 120%/80%   1         10        1          8m27s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           8m27s
+deployment.apps/prometheus-adapter   1/1     1            1           4m32s
+deployment.apps/scaletestapp         2/2     2            2           8m27s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             8m27s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             4m32s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             12s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (46s ago)   115s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           34Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         9m           24Mi            
+
+2026-09-10T01:02:50.940913+03:00
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 120%/80%   1         10        2          8m37s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           8m37s
+deployment.apps/prometheus-adapter   1/1     1            1           4m42s
+deployment.apps/scaletestapp         2/2     2            2           8m37s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             8m38s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             4m43s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             23s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (57s ago)   2m6s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           34Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         9m           24Mi            
+
+2026-09-10T01:03:01.051332+03:00
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 120%/80%   1         10        2          8m48s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           8m48s
+deployment.apps/prometheus-adapter   1/1     1            1           4m53s
+deployment.apps/scaletestapp         2/2     2            2           8m48s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             8m48s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             4m53s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             33s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (67s ago)   2m16s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           34Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         9m           24Mi            
+
+2026-09-10T01:03:11.167886+03:00
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 120%/80%   1         10        2          8m58s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           8m58s
+deployment.apps/prometheus-adapter   1/1     1            1           5m3s
+deployment.apps/scaletestapp         2/2     2            2           8m58s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             8m58s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             5m3s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             43s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (77s ago)   2m26s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           34Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         9m           24Mi            
+
+2026-09-10T01:03:21.272675+03:00
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 120%/80%   1         10        2          9m8s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           9m8s
+deployment.apps/prometheus-adapter   1/1     1            1           5m13s
+deployment.apps/scaletestapp         2/2     2            2           9m8s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             9m8s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             5m13s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             53s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (87s ago)   2m36s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           34Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-kwm6h         9m           24Mi            
+
+2026-09-10T01:03:31.383155+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1         10        2          9m18s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           9m18s
+deployment.apps/prometheus-adapter   1/1     1            1           5m23s
+deployment.apps/scaletestapp         2/3     3            2           9m18s
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             9m18s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             5m23s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             63s
+pod/scaletestapp-67cc57fd9c-jwn2q         0/1     Running   0             2s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (97s ago)   2m46s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-kwm6h         1m           28Mi            
+
+2026-09-10T01:03:41.496617+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1         10        2          9m28s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           9m28s
+deployment.apps/prometheus-adapter   1/1     1            1           5m33s
+deployment.apps/scaletestapp         3/3     3            3           9m28s
+
+NAME                                      READY   STATUS    RESTARTS       AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0              9m28s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0              5m33s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0              73s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0              12s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (107s ago)   2m56s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-kwm6h         1m           28Mi            
+
+2026-09-10T01:03:51.607589+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1         10        3          9m38s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           9m38s
+deployment.apps/prometheus-adapter   1/1     1            1           5m43s
+deployment.apps/scaletestapp         3/3     3            3           9m38s
+
+NAME                                      READY   STATUS    RESTARTS       AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0              9m38s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0              5m43s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0              83s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0              22s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (117s ago)   3m6s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-kwm6h         1m           28Mi            
+
+2026-09-10T01:04:01.739369+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1         10        3          9m48s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           9m48s
+deployment.apps/prometheus-adapter   1/1     1            1           5m53s
+deployment.apps/scaletestapp         3/3     3            3           9m48s
+
+NAME                                      READY   STATUS    RESTARTS       AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0              9m48s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0              5m53s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0              93s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0              32s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (2m7s ago)   3m16s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-kwm6h         1m           28Mi            
+
+2026-09-10T01:04:11.849274+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1         10        3          9m58s
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           9m58s
+deployment.apps/prometheus-adapter   1/1     1            1           6m3s
+deployment.apps/scaletestapp         3/3     3            3           9m58s
+
+NAME                                      READY   STATUS    RESTARTS        AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0               9m58s
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0               6m3s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0               103s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0               42s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   1 (2m17s ago)   3m26s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-kwm6h         1m           28Mi            
+
+2026-09-10T01:04:21.967670+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1         10        3          10m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           10m
+deployment.apps/prometheus-adapter   1/1     1            1           6m14s
+deployment.apps/scaletestapp         3/3     3            3           10m
+
+NAME                                      READY   STATUS      RESTARTS        AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running     0               10m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running     0               6m14s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running     0               114s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running     0               53s
+pod/scaletestapp-67cc57fd9c-kwm6h         0/1     OOMKilled   1 (2m28s ago)   3m37s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-kwm6h         1m           28Mi            
+
+2026-09-10T01:04:32.084688+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 47%/80%   1         10        3          10m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           10m
+deployment.apps/prometheus-adapter   1/1     1            1           6m24s
+deployment.apps/scaletestapp         2/3     3            2           10m
+
+NAME                                      READY   STATUS             RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running            0             10m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running            0             6m24s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running            0             2m4s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running            0             63s
+pod/scaletestapp-67cc57fd9c-kwm6h         0/1     CrashLoopBackOff   1 (11s ago)   3m47s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-jwn2q         1m           9Mi             
+
+2026-09-10T01:04:42.195445+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 47%/80%   1         10        3          10m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           10m
+deployment.apps/prometheus-adapter   1/1     1            1           6m34s
+deployment.apps/scaletestapp         2/3     3            2           10m
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             10m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             6m34s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             2m14s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0             73s
+pod/scaletestapp-67cc57fd9c-kwm6h         0/1     Running   2 (21s ago)   3m57s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-jwn2q         1m           9Mi             
+
+2026-09-10T01:04:52.300030+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 47%/80%   1         10        3          10m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           10m
+deployment.apps/prometheus-adapter   1/1     1            1           6m44s
+deployment.apps/scaletestapp         3/3     3            3           10m
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             10m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             6m44s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             2m24s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0             83s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   2 (31s ago)   4m7s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-jwn2q         1m           9Mi             
+
+2026-09-10T01:05:02.412189+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 47%/80%   1         10        3          10m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           10m
+deployment.apps/prometheus-adapter   1/1     1            1           6m54s
+deployment.apps/scaletestapp         3/3     3            3           10m
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             10m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             6m54s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             2m34s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0             93s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   2 (41s ago)   4m17s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-jwn2q         1m           9Mi             
+
+2026-09-10T01:05:12.530458+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 47%/80%   1         10        3          10m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           10m
+deployment.apps/prometheus-adapter   1/1     1            1           7m4s
+deployment.apps/scaletestapp         3/3     3            3           10m
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             10m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             7m4s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             2m44s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0             103s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   2 (51s ago)   4m27s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-jwn2q         1m           9Mi             
+
+2026-09-10T01:05:22.651210+03:00
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 47%/80%   1         10        3          11m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           11m
+deployment.apps/prometheus-adapter   1/1     1            1           7m14s
+deployment.apps/scaletestapp         3/3     3            3           11m
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             11m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             7m14s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             2m54s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0             113s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   2 (61s ago)   4m37s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   3m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           9Mi             
+scaletestapp-67cc57fd9c-jwn2q         1m           9Mi             
+
+2026-09-10T01:05:32.736232+03:00
+NAME                                               REFERENCE                 TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   0/10      1         10        3          11m
+
+NAME                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/prometheus           1/1     1            1           11m
+deployment.apps/prometheus-adapter   1/1     1            1           7m24s
+deployment.apps/scaletestapp         3/3     3            3           11m
+
+NAME                                      READY   STATUS    RESTARTS      AGE
+pod/prometheus-58949744f4-g4cgx           1/1     Running   0             11m
+pod/prometheus-adapter-79bf7cbcf7-jrctd   1/1     Running   0             7m24s
+pod/scaletestapp-67cc57fd9c-bqb8l         1/1     Running   0             3m4s
+pod/scaletestapp-67cc57fd9c-jwn2q         1/1     Running   0             2m3s
+pod/scaletestapp-67cc57fd9c-kwm6h         1/1     Running   2 (71s ago)   4m47s
+NAME                                  CPU(cores)   MEMORY(bytes)   
+prometheus-58949744f4-g4cgx           2m           33Mi            
+prometheus-adapter-79bf7cbcf7-jrctd   4m           28Mi            
+scaletestapp-67cc57fd9c-bqb8l         1m           10Mi            
+scaletestapp-67cc57fd9c-jwn2q         1m           11Mi            
+scaletestapp-67cc57fd9c-kwm6h         2m           10Mi            

@@ -1,0 +1,15 @@
+query InsuranceApplication($id: ID!) {
+  client(id: $id) {
+    name
+    documents { type number issueDate }
+    relatives { name relationType }
+  }
+}
+
+query DocumentsOnly($id: ID!) {
+  clientDocuments(id: $id) { id type number expiryDate }
+}
+
+query RelativesOnly($id: ID!) {
+  clientRelatives(id: $id) { id relationType name age }
+}
